@@ -1,6 +1,8 @@
 import { connectToDB } from "@/database/dbConnection";
 import { Product } from "@/models/product";
 
+export const dynamic = "force-dynamic";
+
 export const PUT = async (req, { params }) => {
   // Your code here
   const data = await req.json();
